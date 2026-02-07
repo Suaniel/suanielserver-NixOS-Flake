@@ -116,6 +116,7 @@
   #  wget
 	neovim
 	git
+	google-chrome
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
