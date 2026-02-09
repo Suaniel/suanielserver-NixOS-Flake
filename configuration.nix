@@ -117,6 +117,7 @@
 	neovim
 	git
 	google-chrome
+	tailscale
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
