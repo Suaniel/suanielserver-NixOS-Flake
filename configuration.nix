@@ -64,6 +64,9 @@
     layout = "us";
     variant = "";
   };
+  
+  # Enable Tailscale server
+  services.tailscale.enable = true;
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
