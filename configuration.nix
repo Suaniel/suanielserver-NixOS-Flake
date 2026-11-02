@@ -68,6 +68,17 @@
   # Enable Tailscale server
   services.tailscale.enable = true;
 
+  #Enable Jellyfin service
+  services.jellyfin = {
+  	enable = true;
+#	hardwareAcceleration = {
+#		enable = true;
+#		type = "nvenc";
+#		device = "
+	openFirewall = false;
+	user = "jellyfin";
+	};
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -120,7 +131,9 @@
 	neovim
 	git
 	google-chrome
-	tailscale	
+	tailscale
+	jellyfin-desktop
+	pciutils
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
